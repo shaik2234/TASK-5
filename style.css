@@ -1,0 +1,166 @@
+/* Base Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.app-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.todo-app {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #dee2e6;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #212529;
+}
+
+/* Input Area */
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex-grow: 1;
+  padding: 10px 14px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #495057;
+  transition: 0.2s;
+}
+
+#taskInput:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+#addTaskBtn {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #0b5ed7;
+}
+
+/* Task List */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #f1f3f5;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  animation: slideFade 0.3s ease-out;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-left input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0d6efd;
+  cursor: pointer;
+}
+
+.task-left label {
+  font-size: 15px;
+  color: #495057;
+}
+
+.task-completed label {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+/* Remove Button */
+.removeBtn {
+  background-color: #e03131;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.removeBtn:hover {
+  background-color: #c92a2a;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .todo-app {
+    padding: 20px;
+  }
+
+  #addTaskBtn {
+    padding: 10px 12px;
+  }
+}
+@keyframes slideFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
