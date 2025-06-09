@@ -4,7 +4,7 @@ This is a simple and responsive **To-Do List Website** created as part of the **
 
 ## 🌐 Live Demo
 
-🔗 [Visit the Live Website](https://Mahidhar-27.github.io/Task-5)
+🔗 [Visit the Live Website](https://github.com/shaik2234/TASK-5.git)
 
 ---
 
@@ -62,4 +62,4 @@ This is a simple and responsive **To-Do List Website** created as part of the **
 
 ## 📎 Repository
 
-🔗 [GitHub Repository](https://github.com/Mahidhar-27/Task-5)
+🔗 [GitHub Repository](https://github.com/shaik2234/TASK-5.git)
