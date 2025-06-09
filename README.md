@@ -36,7 +36,7 @@ This is a simple and responsive **To-Do List Website** created as part of the **
 4. Committed and pushed the files to GitHub
 5. Enabled GitHub Pages in the repository settings (branch: `main`, root folder)
 6. Website is now live at:  
-   `https://Mahidhar-27.github.io/Task-5`
+   `https://github.com/shaik2234/TASK-5.git`
 
 ---
 
